@@ -14,20 +14,59 @@ var agregar = function (){
     arrayInput.push({nombre:nombre ,apellido:apellido,direccion:direccion })
     contador ++
     imprimir()
-    console.log(arrayInput)
+    local()
 }
 
-function imprimir (){
+function imprimir (valor){
 
-    for (let i= 0; i < arrayInput.length; i++) {
-        const element = arrayInput[i];
+    
+        var tabla = document.getElementById("datos")
+        tabla.innerHTML = ""
+        for (let i= 0; i < arrayInput.length; i++) {
+            
+            
+            var nombre = arrayInput[i].nombre
+            var apellido = arrayInput[i].apellido
+            var direccion = arrayInput[i].direccion
+            var numero = i+1
+    
+            tabla.innerHTML +=
+             "<tr><th scope='row'>"+numero+"</th> <td>"+nombre+"</td> <td>"+apellido+"</td> <td>"+direccion+"</td> <td><button type='button' class='btn btn-danger accion' onclick='eliminar("+numero+")'>Eliminar</button></td> </tr>"
+       }
+   
 
-        var tabla = document.getElementById("tabla")
-
-        tabla.innerHTML += "<tr><th>"+[i]+"</th><td>"+arrayInput[name]+"</td><td>"+arrayInput.apellido+"</td><td>"+arrayInput.direccion+"</td></tr>"
-        
-        console.log(typeof(arrayInput[i]))
-        
-    }
+}
        
+
+
+function eliminar (indice){
+    var indicereal= indice -1
+    arrayInput.splice(indicereal,1)
+    imprimir()
+    local()
 }
+
+function local (){
+    localStorage.setItem('Lista',JSON.stringify(arrayInput))
+}
+
+function recarga(){
+    var arrayInputLocal = JSON.parse(localStorage.getItem('Lista'))
+
+    console.log(arrayInputLocal)
+    var tabla = document.getElementById("datos")
+        tabla.innerHTML = ""
+        for (let i= 0; i < arrayInputLocal.length; i++) {
+            
+            
+            var nombre = arrayInputLocal[i].nombre
+            var apellido = arrayInputLocal[i].apellido
+            var direccion = arrayInputLocal[i].direccion
+            var numero = i+1
+    
+            tabla.innerHTML +=
+             "<tr><th scope='row'>"+numero+"</th> <td>"+nombre+"</td> <td>"+apellido+"</td> <td>"+direccion+"</td> <td><button type='button' class='btn btn-danger accion' onclick='eliminar("+numero+")'>Eliminar</button></td> </tr>"
+       }
+    arrayInput = arrayInputLocal
+}
+recarga()

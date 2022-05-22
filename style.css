@@ -8,20 +8,26 @@ body{
     border-radius: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
+    -webkit-box-shadow: 5px 4px 36px 12px rgba(0,0,0,0.3); 
+box-shadow: 5px 4px 36px 12px rgba(0,0,0,0.3);
     
 }
 .main{
     
-    width: 90%;
+    width: 100%;
     padding-bottom: 10px;
+    
       
 }
 .resultado{
     padding: 20px;
+    -webkit-box-shadow: 5px 4px 36px 12px rgba(0,0,0,0.3); 
+box-shadow: 5px 4px 36px 12px rgba(0,0,0,0.3);
 }
 .formulario{
     text-align: center;
     margin: 10px;
+    
 }
 .formulario input{
     margin: 5px;
@@ -32,13 +38,30 @@ body{
     
 }
 .formulario button{
-    
+    background: rgb(31,19,117);
+background: linear-gradient(155deg, rgba(31,19,117,1) 35%, rgba(221,13,151,1) 100%);
+border: none;
+font-size: large;
+font-weight: 500;
+border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
+    -webkit-box-shadow: 5px 4px 9px 6px rgba(0,0,0,0.28); 
+box-shadow: 5px 4px 9px 6px rgba(0,0,0,0.28);
+width: 60%;
+}
+.formulario button:hover{
+    background: whitesmoke;
+    color:#dd0d97;
+    font-weight: 700;
 }
 
 
+
 .tabla{
-    
+    flex-wrap: wrap;
     padding-bottom: 30px;
+}
+.accion {
+    width: 90px;
 }
