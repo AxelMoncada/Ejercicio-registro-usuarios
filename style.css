@@ -1,0 +1,44 @@
+body{
+    background-color:#140D5B;
+    color: white;
+}
+.container{
+    background-color: #312C7E;    
+    width: 50%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+.main{
+    
+    width: 90%;
+    padding-bottom: 10px;
+      
+}
+.resultado{
+    padding: 20px;
+}
+.formulario{
+    text-align: center;
+    margin: 10px;
+}
+.formulario input{
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    
+}
+.formulario button{
+    
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.tabla{
+    
+    padding-bottom: 30px;
+}
