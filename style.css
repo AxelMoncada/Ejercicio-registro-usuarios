@@ -35,6 +35,8 @@ box-shadow: 5px 4px 36px 12px rgba(0,0,0,0.3);
     font-size: 20px;
     border: 0;
     outline: none;
+    padding: 5px 5px 5px 15px;
+    
     
 }
 .formulario button{
@@ -54,6 +56,16 @@ width: 60%;
     background: whitesmoke;
     color:#dd0d97;
     font-weight: 700;
+}
+
+.formulario button:focus{
+    background: rgb(31,19,117);
+background: linear-gradient(155deg, rgba(31,19,117,1) 35%, rgba(221,13,151,1) 100%);
+border: none;
+color: whitesmoke;
+font-size: large;
+font-weight: 500;
+box-shadow: none !important;
 }
 
 
