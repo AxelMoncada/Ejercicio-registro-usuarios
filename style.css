@@ -1,15 +1,27 @@
+*{
+   
+}
 body{
-    background-color:#140D5B;
+    background: #232836;
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
     color: white;
+
 }
 .container{
-    background-color: #312C7E;    
+    background-color: #232836;    
     width: 50%;
     border-radius: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
-    -webkit-box-shadow: 5px 4px 36px 12px rgba(0,0,0,0.3); 
-box-shadow: 5px 4px 36px 12px rgba(0,0,0,0.3);
+    border-radius: 13px;
+    border-radius: 13px;
+    background: linear-gradient(145deg, #202431, #252b3a);
+    box-shadow:  12px 12px 24px #1e222e,
+                 -12px -12px 24px #282e3e;
+    
+padding-top: 25px;
+padding-bottom: 25px;
     
 }
 .main{
@@ -20,9 +32,10 @@ box-shadow: 5px 4px 36px 12px rgba(0,0,0,0.3);
       
 }
 .resultado{
-    padding: 20px;
-    -webkit-box-shadow: 5px 4px 36px 12px rgba(0,0,0,0.3); 
-box-shadow: 5px 4px 36px 12px rgba(0,0,0,0.3);
+    padding: 25px;
+    background: linear-gradient(145deg, #202431, #252b3a);
+    box-shadow:  12px 12px 24px #1e222e,
+                 -12px -12px 24px #282e3e;
 }
 .formulario{
     text-align: center;
@@ -40,8 +53,8 @@ box-shadow: 5px 4px 36px 12px rgba(0,0,0,0.3);
     
 }
 .formulario button{
-    background: rgb(31,19,117);
-background: linear-gradient(155deg, rgba(31,19,117,1) 35%, rgba(221,13,151,1) 100%);
+    background: #F5F5F5;
+    color: #4B556B;
 border: none;
 font-size: large;
 font-weight: 500;
@@ -53,16 +66,23 @@ box-shadow: 5px 4px 9px 6px rgba(0,0,0,0.28);
 width: 60%;
 }
 .formulario button:hover{
-    background: whitesmoke;
-    color:#dd0d97;
+    background:#4B556B;
+    color:#F5F5F5;
     font-weight: 700;
 }
 
 .formulario button:focus{
-    background: rgb(31,19,117);
-background: linear-gradient(155deg, rgba(31,19,117,1) 35%, rgba(221,13,151,1) 100%);
+    background: #F5F5F5;
 border: none;
-color: whitesmoke;
+color: #4B556B;;
+font-size: large;
+font-weight: 500;
+box-shadow: none !important;
+}
+.formulario button:active{
+    background: #F5F5F5 !important;
+border: none;
+color: #4B556B !important;
 font-size: large;
 font-weight: 500;
 box-shadow: none !important;
@@ -73,6 +93,7 @@ box-shadow: none !important;
 .tabla{
     flex-wrap: wrap;
     padding-bottom: 30px;
+    border-radius: 15px;
 }
 .accion {
     width: 90px;
